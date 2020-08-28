@@ -10,3 +10,6 @@ expo app - scan QR code
 ios
 1. expo app - login 
 2. console - expo login
+
+expo location download
+expo install expo-location

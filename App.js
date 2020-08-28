@@ -2,15 +2,20 @@
 import React from 'react';
 // import { StyleSheet, Text, View } from 'react-native';
 import Loading from './Loading'
+import * as Location from 'expo-location';
 
-export default function App() {
-  return <Loading></Loading>
-    // <View style={styles.container}>
-    //   {/* 리액트 네이티브에서 <View> 태그는 <div>와 같음 */}
-    //   <View style={styles.yellowView}></View>
-    //   <View style={styles.blueView}></View>
-    //   <StatusBar style="auto" />
-    // </View>
+
+export default class extends React.Component {
+  getLocation = async() => {
+    const location = await Location.getCurrentPositionAsync();
+    console.log(location);
+  }
+  componentDidMount(){
+    this.getLocation();
+  }
+  render(){
+    return <Loading />
+  }
 }
 
 
@@ -20,6 +25,23 @@ export default function App() {
 
 
 
+
+
+
+
+
+
+
+
+// export default function App() {
+//   return <Loading></Loading>
+//     <View style={styles.container}>
+//       {/* 리액트 네이티브에서 <View> 태그는 <div>와 같음 */}
+//       <View style={styles.yellowView}></View>
+//       <View style={styles.blueView}></View>
+//       <StatusBar style="auto" />
+//     </View>
+// }
 
 // const styles = StyleSheet.create({
 //   container: {
