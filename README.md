@@ -13,3 +13,6 @@ ios
 
 expo location download
 expo install expo-location
+
+axiou download
+yarn add axios / npm install axios
