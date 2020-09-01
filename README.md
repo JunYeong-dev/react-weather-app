@@ -14,5 +14,8 @@ ios
 expo location download
 expo install expo-location
 
-axiou download
+axios download
 yarn add axios / npm install axios
+
+prop-types download
+yarn add prop-types / npm install prop-types

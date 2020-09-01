@@ -5,6 +5,7 @@ import {Alert} from "react-native";
 import Loading from './Loading'
 import * as Location from 'expo-location';
 import axios from "axios";
+import Weather from './Weather';
 
 const API_KEY = "your API key";
 
@@ -16,9 +17,10 @@ export default class extends React.Component {
     const { data } = await axios.get(
       // [ "", '' ]가 아닌 [ `` ]을 써야 문자열 안에 변수를 포함시킬 수 있음 
       // api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={your API key}
-      `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}`
+      `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}&units=metric`
     );
     console.log(data);
+    this.setState({ isLoading: false, temp: data.main.temp });
   }
 
   getLocation = async() => {
@@ -37,8 +39,8 @@ export default class extends React.Component {
     this.getLocation();
   }
   render(){
-    const { isLoading } = this.state
-    return isLoading ? <Loading /> : null;
+    const { isLoading, temp } = this.state;
+    return isLoading ? <Loading /> : <Weather temp={ Math.round(temp) }/>;
   }
 }
 
