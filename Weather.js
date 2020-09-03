@@ -1,10 +1,12 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 import propTypes from "prop-types";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 export default function Weather({ condition, temp }){
 return (
     <View style={ styles.container }>
+        <MaterialCommunityIcons name="weather-lightning-rainy" size={ 36 } />
         <Text>{ temp }</Text>
         <Text>{ condition }</Text>
     </View>
