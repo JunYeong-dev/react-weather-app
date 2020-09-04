@@ -6,9 +6,14 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 export default function Weather({ condition, temp }){
 return (
     <View style={ styles.container }>
-        <MaterialCommunityIcons name="weather-lightning-rainy" size={ 36 } />
-        <Text>{ temp }</Text>
-        <Text>{ condition }</Text>
+        <View style={ styles.halfContainer }>
+            <MaterialCommunityIcons name="weather-lightning-rainy" size={ 86 } />
+            <Text style={ styles.temp }>{ temp }º</Text>
+            <Text>{ condition }</Text>
+        </View>
+        <View style={ styles.halfContainer }>
+
+        </View>
     </View>
     );
 }
@@ -40,5 +45,13 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: "center",
         alignItems: "center"
+    },
+    halfContainer: {
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center"
+    },
+    temp: {
+        fontSize: 32
     }
 })
