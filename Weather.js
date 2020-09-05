@@ -20,6 +20,7 @@ return (
 
 Weather.propTypes = {
     temp: propTypes.number.isRequired,
+    // 각각의 날씨 type
     condition: propTypes.oneOf([
         "Thunderstorm", 
         "Drizzle", 

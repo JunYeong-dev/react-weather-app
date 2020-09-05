@@ -13,7 +13,9 @@ export default class extends React.Component {
   state = {
     isLoading: true
   }
+  // openweather API를 사용하여 날씨 정보를 취득
   getWeather = async(latitude, longitude) => {
+    // API를 사용해 가져온 날씨 데이터를 변수에 저장
     const { 
       data: { 
         main: { temp },
