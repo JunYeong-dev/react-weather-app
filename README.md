@@ -19,3 +19,6 @@ yarn add axios / npm install axios
 
 prop-types download
 yarn add prop-types / npm install prop-types
+
+LinerGradient download
+expo install expo-linear-gradient
