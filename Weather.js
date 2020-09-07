@@ -4,6 +4,12 @@ import propTypes from "prop-types";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { LinearGradient } from "expo-linear-gradient";
 
+const weatherOptions = {
+    Clouds: {
+        iconName: "cloud"
+    }
+}
+
 export default function Weather({ condition, temp }){
 return (
     <LinearGradient 
@@ -11,7 +17,7 @@ return (
         style={ styles.container }>
         <View style={ styles.halfContainer }>
             <MaterialCommunityIcons 
-                name="weather-lightning-rainy" 
+                name={ weatherOptions[condition].iconName }
                 size={ 86 } 
                 color="white" />
             <Text style={ styles.temp }>{ temp }º</Text>
