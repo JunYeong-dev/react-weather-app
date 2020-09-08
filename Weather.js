@@ -6,14 +6,16 @@ import { LinearGradient } from "expo-linear-gradient";
 
 const weatherOptions = {
     Clouds: {
-        iconName: "cloud"
+        iconName: "cloud",
+        // https://uigradients.com/ 에서 참조
+        gradient: ["#283048", "#859398"]
     }
 }
 
 export default function Weather({ condition, temp }){
 return (
     <LinearGradient 
-        colors={ ["#4c669f", "#3b5998", "#192f6a"] }
+        colors={ weatherOptions[condition].gradient }
         style={ styles.container }>
         <View style={ styles.halfContainer }>
             <MaterialCommunityIcons 
