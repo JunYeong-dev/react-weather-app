@@ -29,7 +29,9 @@ const weatherOptions = {
     },
     Clouds: {
         iconName: "weather-cloudy",
-        gradient: ["#283048", "#859398"]
+        gradient: ["#283048", "#859398"],
+        title: "Clouds",
+        subtitle: "Clouds"
     },
     Mist: {
         iconName: "weather-fog",
@@ -82,8 +84,9 @@ return (
             <Text style={ styles.temp }>{ temp }º</Text>
             <Text>{ condition }</Text>
         </View>
-        <View style={ styles.halfContainer }>
-        
+        <View style={{ ...styles.halfContainer, ...styles.textContainer }}>
+            <Text style= { styles.title }>{ weatherOptions[condition].title }</Text>
+            <Text style= { styles.subtitle }>{ weatherOptions[condition].subtitle }</Text>
         </View>
     </LinearGradient>
     );
@@ -125,5 +128,20 @@ const styles = StyleSheet.create({
     temp: {
         fontSize: 32,
         color: "white"
+    },
+    title: {
+        color: "white",
+        fontSize: 46,
+        fontWeight: "300",
+        marginBottom: 10
+    },
+    subtitle: {
+        color: "white",
+        fontSize: 26,
+        fontWeight: "600"
+    },
+    textContainer: {
+        paddingHorizontal: 20,
+        alignItems: "flex-start"
     }
 })
