@@ -9,65 +9,93 @@ const weatherOptions = {
     // gradient : https://uigradients.com/ 에서 참조
     Thunderstorm: {
         iconName: "weather-lightning",
-        gradient: ["#373b44", "#4286f4"]
+        gradient: ["#373b44", "#4286f4"],
+        title: "Thunderstorm",
+        subtitle: "Today's weather is Thunderstorm"
     },
     Drizzle: {
         iconName: "weather-partly-rainy",
-        gradient: ["#50c9c3", "#96deda"]
+        gradient: ["#50c9c3", "#96deda"],
+        title: "Drizzle",
+        subtitle: "Today's weather is Drizzle"
     },
     Rain: {
         iconName: "weather-pouring",
-        gradient: ["#00d2ff", "#3a7bd5"]
+        gradient: ["#00d2ff", "#3a7bd5"],
+        title: "Rain",
+        subtitle: "Today's weather is Rain"
     },
     Snow: {
         iconName: "weather-snowy-heavy",
-        gradient: ["#83a4d4", "#b6fbff"]
+        gradient: ["#83a4d4", "#b6fbff"],
+        title: "Snow",
+        subtitle: "Today's weather is Snow"
     },
     Clear: {
         iconName: "weather-sunny",
-        gradient: ["ffe259", "ffa751"]
+        gradient: ["ffe259", "ffa751"],
+        title: "Clear",
+        subtitle: "Today's weather is Clear"
     },
     Clouds: {
         iconName: "weather-cloudy",
         gradient: ["#283048", "#859398"],
         title: "Clouds",
-        subtitle: "Clouds"
+        subtitle: "Today's weather is Clouds"
     },
     Mist: {
         iconName: "weather-fog",
-        gradient: ["#43cea2", "#185a9d"]
+        gradient: ["#43cea2", "#185a9d"],
+        title: "Mist",
+        subtitle: "Today's weather is Mist"
     },
     Smoke: {
         iconName: "weather-fog",
-        gradient: ["#334d50", "#cbcaa5"]
+        gradient: ["#334d50", "#cbcaa5"],
+        title: "Smoke",
+        subtitle: "Today's weather is Smoke"
     },
     Haze: {
         iconName: "weather-fog",
-        gradient: ["#43cea2", "#185a9d"]
+        gradient: ["#43cea2", "#185a9d"],
+        title: "Haze",
+        subtitle: "Today's weather is Haze"
     },
     Dust: {
         iconName: "weather-fog",
-        gradient: ["#948e99", "2e1437"]
+        gradient: ["#948e99", "2e1437"],
+        title: "Dust",
+        subtitle: "Today's weather is Dust"
     },
     Fog: {
         iconName: "weather-fog",
-        gradient: ["#43cea2", "#185a9d"]
+        gradient: ["#43cea2", "#185a9d"],
+        title: "Fog",
+        subtitle: "Today's weather is Fog"
     },
     Sand: {
         iconName: "weather-fog",
-        gradient: ["#4da0b0", "#d39d38"]
+        gradient: ["#4da0b0", "#d39d38"],
+        title: "Sand",
+        subtitle: "Today's weather is Sand"
     },
     Ash: {
         iconName: "weather-fog",
-        gradient: ["#606c88", "#3f4c6b"]
+        gradient: ["#606c88", "#3f4c6b"],
+        title: "Ash",
+        subtitle: "Today's weather is Ash"
     },
     Squall: {
         iconName: "weather-pouring",
-        gradient: ["#1a2980", "#26d0ce"]
+        gradient: ["#1a2980", "#26d0ce"],
+        title: "Squall",
+        subtitle: "Today's weather is Squall"
     },
     Tornado: {
         iconName: "weather-tornado",
-        gradient: ["#373b44", "#4286f4"]
+        gradient: ["#373b44", "#4286f4"],
+        title: "Tornado",
+        subtitle: "Today's weather is Tornado"
     }
 }
 
